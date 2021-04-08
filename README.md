@@ -8,10 +8,12 @@ Follow the **Initial Setup** steps below to get started. The setup assumes you k
 ### Goal
 Have a working, stable set of examples for running forecasting experiments using AutoML, pipeline steps, and other related tooling. 
 
-### Scripts
+### Experiments
+NB: Run experiment scripts from root of repository 
+
  - `automl_run.py`
     - Creates an AutoML Run (without using a pipeline) to act as a baseline
- - `pipelines/basic_pipeline.py`
+ - `basic_pipeline.py`
     - Creates a basic pipeline with an AutoMLStep
 
 
