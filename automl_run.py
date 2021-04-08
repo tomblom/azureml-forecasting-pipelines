@@ -12,24 +12,30 @@ from helpers.compute import get_or_create_compute
 
 
 def main():
-    load_dotenv()
-    dataset_name = os.getenv("DATASET_NAME")
-    dataset_version = 'latest'
+    ws = Workspace.from_config()
 
+    # AutoML Config
     with open("aml_config.yml") as file:
         config_dict = yaml.load(file, Loader=yaml.FullLoader)
 
     forecast_args = config_dict['forecast_args']
     automl_args = config_dict['automl_args']
 
-    ws = Workspace.from_config()
-
     # compute target
     compute_target = get_or_create_compute(ws)
+
+    # dataset
+    load_dotenv()
+    dataset_name = os.getenv("DATASET_NAME")
+    dataset_version = 'latest'
 
     if dataset_name not in ws.datasets:
         raise Exception('Could not find dataset "%s"' % dataset_name)
     dataset: AbstractDataset = Dataset.get_by_name(ws, dataset_name, dataset_version)
+
+    ###############
+    # AutoML Config
+    ###############
 
     forecasting_parameters = ForecastingParameters(**forecast_args)
 
