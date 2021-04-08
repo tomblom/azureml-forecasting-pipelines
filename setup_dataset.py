@@ -13,7 +13,6 @@ def main():
     time_column_name = 'timeStamp'
 
     load_dotenv()
-    dataset_name = os.getenv("DATASET_NAME", default="nyc_energy")
 
     ws = Workspace.from_config()
 

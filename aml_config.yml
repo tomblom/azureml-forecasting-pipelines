@@ -1,0 +1,14 @@
+automl_args:
+  task: 'forecasting'
+  iterations: 1 # only for testing
+  primary_metric: 'normalized_root_mean_squared_error'
+  experiment_timeout_hours: 0.3
+  label_column_name: 'demand'
+  enable_early_stopping: True
+  n_cross_validations: 3
+  featurization: 'auto'
+
+forecast_args:
+  time_column_name: 'timeStamp'
+  forecast_horizon: 48
+  target_lags: 'auto'
