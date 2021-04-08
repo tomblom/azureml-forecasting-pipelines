@@ -1,6 +1,20 @@
 # azureml-forecasting-pipelines
 Example Azure AutoML Time Series Forecasting Pipelines
 
+## Repository guide
+---
+Follow the **Initial Setup** steps below to get started. The setup assumes you know what [Conda](https://docs.conda.io/) is. The repository also has project files for the PyCharm IDE.
+
+### Goal
+Have a working, stable set of examples for running forecasting experiments using AutoML, pipeline steps, and other related tooling. 
+
+### Scripts
+ - `automl_run.py`
+    - Creates an AutoML Run (without using a pipeline) to act as a baseline
+ - `pipelines/basic_pipeline.py`
+    - Creates a basic pipeline with an AutoMLStep
+
+
 ## Initial Setup
 ---
 ### Create local development environment
