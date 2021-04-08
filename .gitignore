@@ -130,3 +130,6 @@ dmypy.json
 
 # azureml
 .azureml
+
+# local dataset folder
+.data
