@@ -32,7 +32,7 @@ conda env create -f environment.yml
 
 Activate Environment
 ```commandline
-conda activate azureml
+conda activate azureml_1_26
 ```
 
 ### Create Workspace

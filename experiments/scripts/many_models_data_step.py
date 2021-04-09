@@ -5,7 +5,7 @@ from pandas import DataFrame
 
 
 def main():
-    print("Running prepare_data_step.py")
+    print("Running many_models_data_step.py")
 
     parser = argparse.ArgumentParser('prepare')
     parser.add_argument('--output_path', required=True)

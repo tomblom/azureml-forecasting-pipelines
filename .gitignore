@@ -131,3 +131,6 @@ dmypy.json
 # azureml
 .azureml/
 automl_project_dir/
+
+# local development journal
+dev_journal.txt
