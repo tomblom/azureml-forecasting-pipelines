@@ -1,12 +1,12 @@
-name: azureml
+name: azureml_1_26
 dependencies:
   - python=3.7.*
   - pip
 
   - pip:
       - azureml==0.2.7
-      - azureml-sdk==1.23.*
-      - azureml-contrib-automl-pipeline-steps==1.23.*
+      - azureml-sdk==1.26.*
+      - azureml-contrib-automl-pipeline-steps==1.26.*
       - pandas==1.2.*
       - python-dotenv==0.12.*
       - PyYAML==5.4.1
