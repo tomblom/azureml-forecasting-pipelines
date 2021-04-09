@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # azureml
-.azureml
+.azureml/
+automl_project_dir/

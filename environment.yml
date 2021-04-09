@@ -6,6 +6,7 @@ dependencies:
   - pip:
       - azureml==0.2.7
       - azureml-sdk==1.23.*
+      - azureml-contrib-automl-pipeline-steps==1.23.*
       - pandas==1.2.*
       - python-dotenv==0.12.*
       - PyYAML==5.4.1
