@@ -9,13 +9,16 @@ Follow the **Initial Setup** steps below to get started. The setup assumes you k
 Have a working, stable set of examples for running forecasting experiments using AutoML, pipeline steps, and other related tooling. 
 
 ### Experiments
-NB: Run experiment scripts from root of repository 
+**NB**: Run experiment scripts with repository root as Working Directory
 
  - `automl_run.py`
     - Creates an AutoML Run (without using a pipeline) to act as a baseline
  - `basic_pipeline.py`
     - Creates a basic pipeline with an AutoMLStep
-
+ - `many_models_pipeline`
+   - Creates a pipeline to train models with the Many Models Solution Accelerator
+ - `many_models_pipeline_with_python_step`
+   - Creates a Many Models pipeline incl. a PythonScriptStep to create the data partition files.
 
 ## Initial Setup
 ---
